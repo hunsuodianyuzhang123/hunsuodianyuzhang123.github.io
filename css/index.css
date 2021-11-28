@@ -23,6 +23,7 @@ h2 {
   border-radius: 6px;
   padding: 0 50px 0 12px;
   margin: 0;
+  outline: 0;
 }
 .search #btn {
   position: absolute;
@@ -38,6 +39,9 @@ h2 {
   color: #fff;
   padding: 0;
   margin: 0;
+}
+.search #btn:hover {
+  cursor: pointer;
 }
 ul {
   display: flex;
