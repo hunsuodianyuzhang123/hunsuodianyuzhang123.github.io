@@ -7,39 +7,70 @@
     <title>典狱长的主页</title>
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/dayjs/1.4.1/dayjs.min.js"></script>
+    <script src="https://cdn.staticfile.org/moment.js/1.0.0/moment.min.js"></script>
   </head>
 
   <body>
     <div id="app">
-      <h2>典狱长的主页</h2>
-      <div class="search">
-        <input type="text" id="ipt" />
+      <!-- 头部 -->
+      <header id="header">
+        <h2>典狱长的网页</h2>
+      </header>
+      <!-- 搜索 -->
+      <div id="search">
+        <input type="text" name="" id="ipt" placeholder="默认搜狗搜索" />
         <button id="btn">搜索</button>
       </div>
-      <ul>
-        <li>
-          <a href="https://www.bilibili.com/">
-            <p>哔哩哔哩 (゜-゜)つロ 干杯~</p>
-          </a>
-        </li>
-        <li>
-          <a href="./music.html">
-            <p>随机网易云音乐-测试</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://fanyi.sogou.com/text">
-            <p>搜狗翻译</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/">
-            <p>github</p>
-          </a>
-        </li>
+      <!-- 标签 -->
+      <ul id="tabs">
+        <li><a href="javascript:;" id="tab-changyong">常用</a></li>
+        <li><a href="javascript:;" id="tab-dianshi">电视</a></li>
+        <li><a href="javascript:;" id="tab-keji">科技</a></li>
+        <li><a href="javascript:;" id="tab-sheji">设计</a></li>
+        <li><a href="javascript:;" id="tab-daima">代码</a></li>
       </ul>
+      <!-- 内容 -->
+      <div id="section">
+        <section id="changyong">
+          <ul>
+            <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+            <li><a href="https://www.huya.com/21059589">武林外传直播</a></li>
+            <li><a href="./music.html">随机网易云音乐-测试</a></li>
+            <li><a href="https://fanyi.sogou.com/text">搜狗翻译</a></li>
+            <li><a href="https://github.com/">github</a></li>
+          </ul>
+        </section>
+        <section id="dianshi">
+          <ul>
+            <li><a href="https://www.555dy.com/">555电影网</a></li>
+          </ul>
+        </section>
+        <section id="keji">
+          <ul>
+            <li><a href="https://www.zol.com.cn/">中关村在线</a></li>
+            <li><a href="https://wap.zol.com.cn/">中关村在线产品库</a></li>
+            <li><a href="https://www.autohome.com.cn/">汽车之家</a></li>
+          </ul>
+        </section>
+        <section id="sheji">
+          <ul>
+            <li><a href="">花瓣网</a></li>
+            <li><a href="">站酷</a></li>
+          </ul>
+        </section>
+        <section id="daima">
+          <ul>
+            <li><a href=""></a></li>
+          </ul>
+        </section>
+      </div>
+      <!-- 注 -->
+      <div id="zhu">
+        <p>*仅供个人测试使用</p>
+      </div>
     </div>
-    <p id="zhu">*仅供个人测试使用</p>
+
     <script src="js/index.js"></script>
   </body>
 </html>

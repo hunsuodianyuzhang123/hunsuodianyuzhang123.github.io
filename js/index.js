@@ -1,6 +1,10 @@
+// 开始效果
+$('#tabs').on('click', 'li', function () {
+  $('#section section').eq($(this).index()).show().siblings().hide()
+})
 // 搜索
 $('#btn').on('click', function () {
-  window.location.href ='https://www.sogou.com/web?ie=UTF-8&query=' + $('#ipt').val()   
+  window.location.href ='https://www.sogou.com/web?ie=UTF-8&query=' + $('#ipt').val()
   $('#ipt').val()=''
 })
 // 其他
