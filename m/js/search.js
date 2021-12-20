@@ -1,5 +1,15 @@
 // 进入式按钮自动聚焦
 document.getElementById('ipt').focus()
+// 聚焦的样式
+document.getElementById('ipt').onfocus = function () {
+  document.getElementById('ipt').style.borderWidth = '2px'
+  document.getElementById('ipt').style.borderColor = '#1a73e8'
+}
+// 离开聚焦的样式
+document.getElementById('ipt').onblur = function () {
+  document.getElementById('ipt').style.borderWidth = '1px'
+  document.getElementById('ipt').style.borderColor = '#808080'
+}
 // 刚进入时的网址
 let href = 'https://www.sogou.com/web?query='
 // 按钮按下的动作

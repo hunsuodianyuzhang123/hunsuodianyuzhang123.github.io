@@ -32,7 +32,7 @@
   height: 60px;
   border: 1px solid #808080;
   border-radius: 100px;
-  outline-color: #1a73e8;
+  outline: 0;
   padding: 20px;
   margin: 20px 0;
   text-align: center;
