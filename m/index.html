@@ -4,77 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>主页</title>
+    <title>典狱长的网页</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./icomoon/style.css" />
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
 
   <body>
     <div id="app">
       <!-- 头部 -->
-      <header id="header">
-        <h2>🐷 页</h2>
+      <div id="header">
+        <h2 id="title">典狱长的网页</h2>
         <a href="./time.html"><span class="icon-clock"></span></a>
+        <a href="./music.html"><span class="icon-music"></span></a>
         <a href="./search.html"><span class="icon-search"></span></a>
-      </header>
-      <!-- 标签 -->
-      <ul id="tabs">
-        <li>
-          <a href="javascript:;" id="tab-changyong">常用</a>
-        </li>
-        <li>
-          <a href="javascript:;" id="tab-dianshi">电视</a>
-        </li>
-        <li>
-          <a href="javascript:;" id="tab-keji">科技</a>
-        </li>
-        <li>
-          <a href="javascript:;" id="tab-sheji">设计</a>
-        </li>
-        <li>
-          <a href="javascript:;" id="tab-daima">代码</a>
-        </li>
-      </ul>
+      </div>
+      <!-- 图片 -->
+      <div id="banner">
+        <img
+          src="https://pic.baike.soso.com/ugc/baikepic2/3089/20210221152653-968793098_jpeg_980_500_82602.jpg/0"
+          alt=""
+        />
+      </div>
       <!-- 内容 -->
       <div id="section">
-        <!-- 常用 -->
-        <section id="changyong">
-          <ul>
-            <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
-            <li><a href="https://www.huya.com/21059589">武林外传直播</a></li>
-            <li><a href="./music.html">随机网易云音乐</a></li>
-            <li><a href="https://fanyi.sogou.com/text">搜狗翻译</a></li>
-            <li><a href="https://github.com/">github</a></li>
-          </ul>
-        </section>
-        <!-- 电视 -->
-        <section id="dianshi">
-          <ul>
-            <li><a href="https://www.555dy.com/">555电影网</a></li>
-            <li><a href="https://www.huya.com/">虎牙直播</a></li>
-            <li><a href="https://www.douyu.com/">斗鱼直播</a></li>
-            <li><a href="https://live.bilibili.com/">哔哩哔哩直播</a></li>
-          </ul>
-        </section>
-        <!-- 科技 -->
-        <section id="keji">
-          <ul>
-            <li><a href="https://www.zol.com.cn/">中关村在线</a></li>
-            <li><a href="https://wap.zol.com.cn/">中关村在线产品库</a></li>
-            <li><a href="https://www.autohome.com.cn/">汽车之家</a></li>
-          </ul>
-        </section>
-        <!-- 设计 -->
-        <section id="sheji">
-          <ul>
-            <li><a href="https://huaban.com/">花瓣网</a></li>
-            <li><a href="https://www.zcool.com.cn/">站酷</a></li>
-          </ul>
-        </section>
-        <!-- 代码 -->
-        <section id="daima">
-          <ul>
+        <h3>常用</h3>
+        <ul id="changyong">
+          <li>
+            <a href="https://www.bilibili.com/">
+              <img src="https://www.bilibili.com/favicon.ico" alt="" />
+              哔哩哔哩
+            </a>
+          </li>
+          <li>
+            <a href="https://www.huya.com/21059589">
+              <img src="https://www.huya.com/favicon.ico" alt="" />
+              武林外传直播
+            </a>
+          </li>
+          <li>
+            <a href="https://fanyi.sogou.com/text">
+              <img src="https://fanyi.sogou.com/favicon.ico" alt="" />
+              搜狗翻译
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/">
+              <img src="https://github.com/favicon.ico" alt="" />
+              github
+            </a>
+          </li>
+          <li>
+            <a href="https://www.555dy.com/">
+              <img src="https://www.555dy2.com/top.png" alt="" />
+              555电影网
+            </a>
+          </li>
+        </ul>
+        <h3>其他</h3>
+        <ul id="qita">
+          <li>
+            <a href="https://www.zol.com.cn/">
+              <img src="https://www.zol.com.cn/favicon.ico" alt="" />
+              中关村在线
+            </a>
+          </li>
+          <li>
+            <a href="https://wap.zol.com.cn/">
+              <img src="https://wap.zol.com.cn/favicon.ico" alt="" />
+              中关村在线产品库
+            </a>
+          </li>
+          <li>
+            <a href="https://www.autohome.com.cn/">
+              <img src="https://www.autohome.com.cn/favicon.ico" alt="" />
+              汽车之家
+            </a>
+          </li>
+          <li>
+            <a href="https://huaban.com/">
+              <img src="https://huaban.com/favicon.ico" alt="" />
+              花瓣网
+            </a>
+          </li>
+          <li>
+            <a href="https://www.zcool.com.cn/">
+              <img src="https://static.zcool.cn/z/site/favicon.ico" alt="" />
+              站酷
+            </a>
+          </li>
+        </ul>
+        <div id="hide" style="display: none">
+          <h3 id="hide-in">笔记与文档</h3>
+          <ul id="note">
             <li><a href="https://www.w3school.com.cn/">w3school</a></li>
             <li><a href="https://developer.mozilla.org/zh-CN/">MDN</a></li>
             <li>
@@ -94,11 +116,18 @@
             <li><a href="https://es6.ruanyifeng.com/">ES6入门-阮一峰</a></li>
             <li><a href="./note/7.服务端全家桶.html">笔记-服务端</a></li>
           </ul>
-        </section>
+        </div>
       </div>
       <!-- 注 -->
       <div id="zhu">
-        <p>*仅供个人测试使用</p>
+        <p>
+          仅供个人测试使用，如有疑问请
+          <a href="tel:13256061539">电话</a> /
+          <a href="tencent://message/?Site=baidu.com&uin=1196601738&Menu=yes"
+            >QQ</a
+          >
+          与本人联系。
+        </p>
       </div>
     </div>
 

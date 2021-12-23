@@ -8,23 +8,13 @@ if (
 } else {
   window.location.href = '../index.html' // 电脑
 }
-// 开始效果
-$('#tabs').on('click', 'li', function () {
-  $('#section section').eq($(this).index()).show().siblings().hide()
+// 点击标题展示笔记
+$('#title').on('click', function () {
+  $('#hide').show()
 })
-// 点击
-$('#tabs li:first-child').css({ fontWeight: '700', backgroundColor: '#e0e0e0' })
-$('#tabs li').on('click', function () {
-  $(this)
-    .css({
-      fontWeight: '700',
-      backgroundColor: '#e0e0e0',
-    })
-    .siblings()
-    .css({
-      fontWeight: '400',
-      backgroundColor: '#eee',
-    })
+// 点击小标题隐藏
+$('#hide-in').on('click', function () {
+  $('#hide').hide()
 })
 // 其他
 console.log('以后有可能会完善')
