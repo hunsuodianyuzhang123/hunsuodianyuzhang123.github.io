@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  position: relative;
+}
+#app #back {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #4e6ef2;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+#app #back:hover {
+  cursor: pointer;
+}
+#app #title {
+  height: 80px;
+  background-color: #4e6ef2;
+}
+#app #title .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+#app #title .title h1 {
+  font-size: 32px;
+  line-height: 80px;
+  color: #fff;
+}
+#app #time {
+  height: 20px;
+  background-color: #4e6ef2;
+}
+#app #time .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+#app #time .time p {
+  font-size: 14px;
+  color: #fff;
+}
+#app #tabs {
+  height: 40px;
+  background-color: #eee;
+}
+#app #tabs ul {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+#app #tabs ul li {
+  flex: 1;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  color: #222;
+  list-style: none;
+}
+#app #tabs ul li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+#app #section {
+  overflow: hidden;
+  text-align: center;
+}
+#app #section section {
+  width: 1200px;
+  margin: 30px auto;
+}
+#app #section section h2 {
+  font-size: 24px;
+  padding: 16px 8px;
+}
+#app #section section h3 {
+  padding: 10px 5px;
+}
+#app #section section a {
+  display: inline-block;
+  font-size: 16px;
+  color: #4e6ef2;
+  text-decoration: none;
+  margin: 10px;
+}
+#app #section section a:hover {
+  text-decoration: underline;
+}

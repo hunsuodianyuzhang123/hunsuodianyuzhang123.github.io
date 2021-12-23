@@ -6,706 +6,832 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.js"></script>
-    <script src="https://cdn.staticfile.org/dayjs/1.4.1/dayjs.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div id="app">
-      <!-- 返回顶部 -->
-      <div id="back">↑</div>
-      <!-- 开头 -->
-      <div id="title">
-        <div class="title">
-          <h1>网站小导航</h1>
+      <!-- 头部最上面 -->
+      <div id="header">
+        <!-- 头部里面 -->
+        <div id="header-inner">
+          <!-- 左边名字 -->
+          <div id="name">
+            <a href="https://hunsuodianyuzhang123.github.io/home/"
+              >典狱长的网页</a
+            >
+          </div>
+          <!-- 右边链接 -->
+          <ul id="tab">
+            <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+            <li><a href="https://fanyi.sogou.com/text">搜狗翻译</a></li>
+            <li>
+              <a href="https://developer.mozilla.org/zh-CN/">MDN Web Docs</a>
+            </li>
+            <li><a href="https://github.com/">Github</a></li>
+          </ul>
         </div>
       </div>
-      <!-- 时间 -->
-      <div id="time">
-        <div class="time">
-          <p></p>
+
+      <!-- 左边侧边栏 -->
+      <div id="aside">
+        <!-- 侧边栏内部 -->
+        <div id="aside-inner">
+          <ul>
+            <li class="lg">
+              <a href="javascript:;"
+                >常用
+                <span>-</span>
+              </a>
+              <ul class="md" style="display: block">
+                <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+                <li>
+                  <a href="https://www.huya.com/21059589">武林外传新直播</a>
+                </li>
+                <li><a href="https://fanyi.sogou.com/text">搜狗翻译</a></li>
+                <li>
+                  <a href="https://developer.mozilla.org/zh-CN/"
+                    >MDN Web Docs</a
+                  >
+                </li>
+                <li><a href="https://github.com/">Github</a></li>
+              </ul>
+            </li>
+            <!-- 电视 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >电视
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+            </li>
+            <!-- 别人的导航 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >别人的导航
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li>
+                  <a href="https://imyshare.com/">iMyShare(神秘的热心网友)</a>
+                </li>
+                <li><a href="https://www.24kdh.com/">24k导航</a></li>
+                <li><a href="https://daohang.youyisi8.com/">有意思导航</a></li>
+                <li><a href="https://hao.wmzhe.cn/">完美导航</a></li>
+                <li><a href="https://pxz520.cn/">贫小子</a></li>
+                <li>
+                  <a href="https://www.bookmarkearth.com/"
+                    >首页-书签地球-中国首家浏览器书签共享平台</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://dalao.ru/">大佬点入 | 不死鸟官网发布页</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 邮箱 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >邮箱
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://mail.qq.com/">QQ邮箱</a></li>
+                <li><a href="https://mail.163.com/">网易163邮箱</a></li>
+              </ul>
+            </li>
+            <!-- 地图 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >地图
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://map.baidu.com/">百度地图</a></li>
+                <li><a href="https://www.amap.com/">高德地图</a></li>
+                <li><a href="http://map.sogou.com/">搜狗地图</a></li>
+                <li><a href="https://map.qq.com/">腾讯地图</a></li>
+              </ul>
+            </li>
+            <!-- 翻译 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >翻译
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://fanyi.baidu.com/">百度翻译</a></li>
+                <li><a href="https://fanyi.sogou.com/">搜狗翻译</a></li>
+                <li><a href="https://fanyi.youdao.com/">有道翻译</a></li>
+                <li><a href="https://translate.google.cn/">Google翻译</a></li>
+              </ul>
+            </li>
+            <!-- 游戏 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >游戏
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://lol.qq.com/">英雄联盟</a></li>
+                <li><a href="https://pvp.qq.com/">王者荣耀</a></li>
+                <li><a href="https://hs.blizzard.cn/">炉石传说</a></li>
+              </ul>
+            </li>
+            <!-- 电商 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >电商
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://www.taobao.com/">淘宝</a></li>
+                <li><a href="https://www.jd.com/">京东</a></li>
+                <li><a href="https://www.pinduoduo.com/">拼多多</a></li>
+                <li><a href="https://www.tmall.com/">天猫</a></li>
+                <li><a href="https://www.suning.com/">苏宁易购</a></li>
+                <li><a href="http://www.dangdang.com/">当当网</a></li>
+                <li><a href="https://www.amazon.cn/">亚马逊</a></li>
+              </ul>
+            </li>
+            <!-- 直播 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >直播
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://live.bilibili.com/">bilibili直播</a></li>
+                <li><a href="https://www.huya.com/">虎牙直播</a></li>
+                <li><a href="https://www.douyu.com/">斗鱼直播</a></li>
+                <li><a href="https://www.yy.com/">YY直播</a></li>
+              </ul>
+            </li>
+            <!-- 视频 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >视频
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+                <li><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+                <li><a href="https://www.youku.com/">优酷</a></li>
+                <li><a href="https://v.qq.com/">腾讯视频</a></li>
+                <li><a href="https://tv.sohu.com/">搜狐视频</a></li>
+                <li><a href="https://www.le.com/">乐视视频</a></li>
+                <li><a href="https://www.douyin.com/">抖音</a></li>
+                <li><a href="http://www.yyets.com/">人人影视</a></li>
+                <li>
+                  <a href="https://tool.yijingying.com/video/"
+                    >***视频解析***</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.yijingying.com/video"
+                    >***视频解析新网站***</a
+                  >
+                </li>
+                <li><a href="https://mixkit.co/">mixkit</a></li>
+                <li><a href="https://www.xinpianchang.com/">新片场</a></li>
+                <li><a href="https://www.videezy.com/">videezy</a></li>
+                <li><a href="https://www.yugaopian.cn/">预告片世界</a></li>
+                <li><a href="https://gaoqing.fm/">高清电影</a></li>
+                <li><a href="http://www.yinfans.me/">音范丝</a></li>
+              </ul>
+            </li>
+            <!-- 音乐 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >音乐
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://music.163.com/">网易云音乐</a></li>
+                <li><a href="https://y.qq.com/">QQ音乐</a></li>
+                <li><a href="http://www.kugou.com/">酷狗音乐</a></li>
+                <li><a href="http://www.kuwo.cn/">酷我音乐</a></li>
+                <li><a href="https://music.migu.cn/">咪咕音乐</a></li>
+                <li>
+                  <a href="http://tool.liumingye.cn/music/?page=searchPage"
+                    >MyFreeMP3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- 设计--灵感 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--灵感
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://huaban.com/">花瓣网</a></li>
+                <li><a href="https://www.zcool.com.cn/">站酷(ZCOOL)</a></li>
+                <li><a href="https://www.canva.cn/">Canva可画</a></li>
+                <li><a href="https://aotu.io/">Aotu.io 「凹凸实验室」</a></li>
+                <li><a href="http://www.51yuansu.com/">觅元素</a></li>
+                <li><a href="http://www.58pic.com/">千图网</a></li>
+                <li><a href="https://588ku.com/">千库网</a></li>
+                <li><a href="https://699pic.com/">摄图网</a></li>
+                <li><a href="https://ibaotu.com/">包图网</a></li>
+                <li><a href="http://soso.nipic.com/">昵图网</a></li>
+                <li><a href="http://www.ooopic.com/">我图网</a></li>
+                <li>
+                  <a href="http://www.tuyiyi.com/">图翼翼-大部分需要付费</a>
+                </li>
+                <li><a href="https://ycg.qq.com/">腾讯原创馆</a></li>
+                <li><a href="https://www.dc10000.com">素材国度</a></li>
+                <li><a href="https://www.behance.net/">Behance</a></li>
+                <li><a href="https://dribbble.com/">dribbble</a></li>
+                <li><a href="https://www.gtn9.com/">古田路9号</a></li>
+                <li><a href="https://www.uisdc.com/">优设网</a></li>
+                <li><a href="https://www.iguoguo.net/">爱果果</a></li>
+                <li><a href="http://www.68design.net/">68design</a></li>
+                <li><a href="http://reeoo.com/">ree0g设计灵感</a></li>
+                <li><a href="http://www.thefwa.com/">国外设计灵感网较慢</a></li>
+                <li><a href="http://ww.uishe.cn/">UI社</a></li>
+                <li><a href="http://collectui.com/">Scollestuh</a></li>
+              </ul>
+            </li>
+            <!-- 设计--导航 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--导航
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li>
+                  <a href="https://www.zhihu.com/question/20369808"
+                    >优秀的设计网站-知乎</a
+                  >
+                </li>
+
+                <li><a href="https://www.meiye.art/">美叶网</a></li>
+                <li>
+                  <a href="http://www.uicool123.com/webnav"
+                    >UI酷设计--设计导航</a
+                  >
+                </li>
+                <li>
+                  <a href="http://hao.shejidaren.com/"
+                    >设计导航-精选最好的设计网站大全</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://www.seeseed.com/">Seeseed-无穷尽设计可能</a>
+                </li>
+                <li>
+                  <a href="http://so.uigreat.com/">Ul设计师导航网-优阁</a>
+                </li>
+                <li>
+                  <a href="https://hao.uisdc.com/"
+                    >优设导航-学设计从这里开始!</a
+                  >
+                </li>
+                <li>
+                  <a href="http://16map.com/">设计导航-一流设计导航网站大全</a>
+                </li>
+                <li><a href="http://www.chuangzaoshi.com/">创造狮导航</a></li>
+                <li><a href="http://www.hippter.com/">HiPPTer</a></li>
+                <li>
+                  <a href="http://www.uxmap.cn/"
+                    >设计导航-好设计从这里开始|Uxmap</a
+                  >
+                </li>
+                <li><a href="http://www.qijishow.com/">奇迹秀</a></li>
+                <li>
+                  <a href="http://www.qijishow.com/down/index.html"
+                    >奇迹工具箱</a
+                  >
+                </li>
+                <li><a href="http://90sheji.com/">90设计</a></li>
+                <li><a href="https://idesign.qq.com/">腾讯设计导航</a></li>
+                <li><a href="http://ww.niudana.com/">牛大拿设计导航</a></li>
+                <li><a href="http://www.ad110.com/">Ad110</a></li>
+                <li><a href="http://91sotu.com/">搜图导航</a></li>
+                <li><a href="https://www.ubuuk.com/">优波设计</a></li>
+              </ul>
+            </li>
+            <!-- 设计--素材 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--素材
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="http://www.hoslin.cn/">红森林-(HOSLIN.CN)</a></li>
+                <li><a href="http://www.uicool123.com/">ui酷设计</a></li>
+                <li><a href="https://sc.chinaz.com/">站长素材</a></li>
+                <li><a href="https://bitu360.com/">笔图网</a></li>
+                <li><a href="https://www.redocn.com/">红动中国</a></li>
+                <li><a href="https://www.zhisheji.com/">致设计</a></li>
+                <li><a href="http://www.hamaziyuan.com/">蛤蟆资源</a></li>
+                <li>
+                  <a href="http://www.3h3.com/k/LightroomPresetsDownload/"
+                    >Lightroom预设下载</a
+                  >
+                </li>
+
+                <li><a href="https://brushes8.com/">ps笔刷吧</a></li>
+                <li><a href="https://abduzeedo.com/">Abduzeed8</a></li>
+                <li><a href="https://scene360.com/">Scene360</a></li>
+                <li><a href="https://psdrepo.com/">FREE PSD</a></li>
+                <li><a href="http://woofeng.cn/">黄蜂</a></li>
+              </ul>
+            </li>
+            <!-- 设计--素材免费 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--素材免费
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li>
+                  <a href="http://pngimg.com/"
+                    >PNG images | 100 000+ Free PNG images</a
+                  >
+                </li>
+                <li>
+                  <a href="https://unsplash.com/"
+                    >Beautiful Free lmages & Pictures | Unsplash</a
+                  >
+                </li>
+
+                <li><a href="https://pngss.com/">PNG搜索网</a></li>
+                <li><a href="https://www.visualhunt.com">商业个人都可用</a></li>
+                <li>
+                  <a href="https://www.pexels.com"
+                    >支持下载的图片都可自由使用</a
+                  >
+                </li>
+                <li><a href="https://www.foodiesfeed.com">美食素材网站</a></li>
+                <li>
+                  <a href="https://www.pixabay.com/zh/">免费正版高清素材库</a>
+                </li>
+                <li>
+                  <a href="https://www.ssyer.com/home">沙沙野(无版权图片)</a>
+                </li>
+                <li><a href="https://7mx.com/">7MX</a></li>
+                <li><a href="http://www.quanjing.com/">全景图</a></li>
+                <li>
+                  <a href="http://www.Lanrentuku.com/vector/">懒人图库</a>
+                </li>
+                <li>
+                  <a href="http://arting365.com/gallery">圈片搜索设计灵感</a>
+                </li>
+                <li>
+                  <a href="https://cn.freeimages.com/">免费商用圈片质量不高</a>
+                </li>
+                <li><a href="http://streetwill.co/">图片素材</a></li>
+                <li><a href="https://www.duitang.com/">堆糖</a></li>
+                <li><a href="https://tinypng.com/">图片压缩tinypng</a></li>
+                <li><a href="https://lanhuapp.com/">蓝湖切图标注等</a></li>
+                <li><a href="https://unblast.com">免费设计素材网</a></li>
+                <li><a href="https://www.stickpng.com">免扣png素材网</a></li>
+                <li>
+                  <a
+                    href="https://icons8.com/animated-iconshttps://icons8.com/animated-icons"
+                    >免费可商用动效</a
+                  >
+                </li>
+                <li><a href="https://www.trunklog.com/">Trunklog</a></li>
+                <li><a href="http://source.pixite.co/">Pixite</a></li>
+                <li><a href="http://cupcake.nilssonlee.se/">Cupcake</a></li>
+                <li><a href="https://picjumbo.com/">Picjumbo</a></li>
+                <li><a href="https://fancycrave.com/">Fancycrave</a></li>
+                <li>
+                  <a href="https://stock.tookapic.com/photos">Tookapic</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 设计--纹理 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--纹理
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="http://bg-patterns.com/">Bg-patterns背景</a></li>
+                <li>
+                  <a href="http://thepatternlibrary.com/"
+                    >The Pattern Library</a
+                  >
+                </li>
+                <li><a href="https://www.patterninja.com/">patterninja</a></li>
+                <li><a href="https://we.graphics/">we.graphics</a></li>
+              </ul>
+            </li>
+            <!-- 设计--插画 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--插画
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li>
+                  <a href="https://www.opendoodles.com/"
+                    >Open Doodles(免费开源插画集)</a
+                  >
+                </li>
+
+                <li><a href="https://iradesign.io/">IRA Design</a></li>
+                <li>
+                  <a href="https://icons8.com/mega-creator">mega-creator</a>
+                </li>
+                <li><a href="https://mixkit.co/free-stock-art/">mixkit</a></li>
+                <li>
+                  <a href="https://www.opendoodles.com/compositions"
+                    >opendoodles</a
+                  >
+                </li>
+                <li><a href="https://undraw.co/illustrations">undraw</a></li>
+                <li>
+                  <a href="https://www.streamlinehq.com/">streamline免费插画</a>
+                </li>
+                <li>
+                  <a href="https://icons8.com/illustrations"
+                    >OUCH免费矢量插画</a
+                  >
+                </li>
+                <li>
+                  <a href="https://iconscout.com/free-illustrations"
+                    >iconsout免费可商用图标、插画、3D模型、图标动效</a
+                  >
+                </li>
+
+                <li>
+                  <a href="http://www.humaaans.com">免费可商用插画素材</a>
+                </li>
+                <li>
+                  <a href="https://gallery.manypixels.co/"
+                    >免费可商用插画素材</a
+                  >
+                </li>
+                <li>
+                  <a href="https://isoflat.com/isobuild/">在线制作2.5D插画</a>
+                </li>
+                <li>
+                  <a href="https://generator.opendoodles.com/"
+                    >免费可商用涂鸦插画</a
+                  >
+                </li>
+                <li>
+                  <a href="https://delesign.com/free-designs/graphics/"
+                    >免费可商用双色插画</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://pan.baidu.com/s/14Zky5en8Kz3unkiLi08DUg"
+                    >百度网盘插画打包1(提取码:r2bt)</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://pan.baidu.com/s/1DPrWb7kIPBU-q7rWOsuzPQ"
+                    >百度网盘插画打包2(提取码:4s5u)</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- 设计--配色 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--配色
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://coolors.co/">散热器</a></li>
+                <li>
+                  <a
+                    href="https://coolors.co/461220-8c2f39-b23a48-fcb9b2-fed0bb"
+                    >散热器1</a
+                  >
+                </li>
+
+                <li><a href="https://colorhunt.co/">色彩搜寻</a></li>
+                <li>
+                  <a href="http://colorhunt.co/popular"
+                    >色彩搜寻-最受欢迎的调色板</a
+                  >
+                </li>
+                <li><a href="https://uigradients.com/">色彩渐变</a></li>
+                <li><a href="http://zhongguose.com/">中国色配色</a></li>
+                <li>
+                  <a href="https://colors.ichuantong.cn/">中国传统颜色手册</a>
+                </li>
+                <li><a href="https://flatuicolors.com/">平面UI颜色</a></li>
+                <li><a href="http://colorme.io/">ColorMe</a></li>
+                <li><a href="http://khroma.co/">khroma</a></li>
+                <li><a href="http://www.colordrop.io/">ColorDrop</a></li>
+                <li>
+                  <a href="https://color.adobe.com">色轮、调色盘产生器</a>
+                </li>
+                <li>
+                  <a href="https://www.materialpalette.com/"
+                    >选择2种颜色，自动生成扁平化配色界面(主色辅色强调色)</a
+                  >
+                </li>
+
+                <li><a href="https://webgradients.com/">渐变色配色</a></li>
+                <li>
+                  <a href="https://shapefactory.co"
+                    >配色、图片颜色修改、配色提取、logo生成</a
+                  >
+                </li>
+
+                <li>
+                  <a href="http://colorsupplyyy.com/app/"
+                    >基于色彩原理的扁平插画快速配色</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://www.sessions.edu/color-caLculator/"
+                    >基于色彩原理的配色</a
+                  >
+                </li>
+
+                <li>
+                  <a href="http://colorsafe.co/"
+                    >设定背景色，自动匹配前景文字色</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.happyhues.co/"
+                    >随机产生色卡(会告诉你怎么用)</a
+                  >
+                </li>
+                <li><a href="http://colormind.io/">随机产生色卡</a></li>
+                <li><a href="https://colorsinspo.com">色卡</a></li>
+                <li>
+                  <a href="http://khroma.co/"
+                    >选50种你喜欢的颜色自动为你生成色卡</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.palettable.io/">根据喜好生成色卡</a>
+                </li>
+                <li>
+                  <a href="https://randomally.com/">快速提供前背景色配色灵感</a>
+                </li>
+                <li>
+                  <a href="https://www.threebu.it/randommaterial-paLette/"
+                    >快速提供前背景色配色灵感</a
+                  >
+                </li>
+
+                <li>
+                  <a href="http://www.vanschneider.com/colors/"
+                    >快速提供前背景色配色灵感</a
+                  >
+                </li>
+
+                <li>
+                  <a href="http://www.colorhexa.com/f84604"
+                    >选择一个颜色，分析，匹配色彩方案(色盲模拟)</a
+                  >
+                </li>
+
+                <li>
+                  <a href="http://www.colorlisa.com/">知名画家名作颜色提取</a>
+                </li>
+                <li>
+                  <a href="http://www.colourco.de/"
+                    >点击左侧色彩关系标签，拖动鼠标调整自己喜欢的颜色</a
+                  >
+                </li>
+
+                <li><a href="https://colorsupplyyy.com">color supply</a></li>
+                <li>
+                  <a href="https://creativemarket.com/">creative market</a>
+                </li>
+                <li><a href="https://www.pixeden.com/">pixeden</a></li>
+              </ul>
+            </li>
+            <!-- 设计--字体 -->
+            <li class="lg">
+              <a href="javascript:;"
+                >设计--字体
+                <span>+</span>
+              </a>
+              <ul class="md">
+                <li><a href="https://www.likefont.com/">识字体网</a></li>
+                <li><a href="https://www.hellofont.cn/">字由网</a></li>
+                <li><a href="https://izihun.com/">字魂网</a></li>
+                <li><a href="http://www.font168.com/">字体下载网</a></li>
+                <li><a href="https://www.17font.com/">字体视界</a></li>
+                <li><a href="http://www.aafont.com.cn/">Aa字库</a></li>
+                <li><a href="https://51ifonts.com/">Ifonts</a></li>
+                <li>
+                  <a href="https://www.zijia.com.cn/"
+                    >字加网-找字体来字加-专业的字体获取和字体设计交流平台</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://www.ypppt.com/ziti/">优品ppt字体下载</a>
+                </li>
+                <li><a href="https://www.maoken.com/">猫啃网</a></li>
+                <li><a href="http://www.qiuziti.com/">求字体网</a></li>
+                <li><a href="http://font.chinaz.com/">站长字体</a></li>
+                <li><a href="http://www.zitikoudai.com/">字体口袋</a></li>
+                <li><a href="http://www.diyiziti.com/">在线字体转换</a></li>
+                <li><a href="http://font.knowsky.com/">字体大宝库</a></li>
+                <li>
+                  <a href="http://www.dafont.com/theme.php?cat=504&fpp=20"
+                    >宇体素材</a
+                  >
+                </li>
+                <li><a href="http://www.fontshopcom/">Fontshop</a></li>
+                <li><a href="http://www.fontke.com/">Fontke</a></li>
+                <li><a href="http://www.1ikefont.com/">Likefont</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="dibu">
+            <a href="./note.html">@PATRICK</a>
+            <a href="./yuan.html">旧</a>
+          </div>
         </div>
       </div>
-      <!-- 标签 -->
-      <div id="tabs">
-        <ul>
-          <li>地图</li>
-          <li>邮箱</li>
-          <li>翻译</li>
-          <li>游戏</li>
-          <li>新闻</li>
-          <li>搜索</li>
-          <li>网址</li>
-          <li>电商</li>
-          <li>直播</li>
-          <li>视频</li>
-          <li>音乐</li>
-          <li>常用</li>
-          <li>导航</li>
-          <li>设计</li>
-          <li>代码</li>
-          <li>API</li>
-          <li>PPT</li>
-          <li>下载</li>
-          <li>壁纸</li>
-          <li>剩余</li>
-        </ul>
-      </div>
-      <!-- 内容 -->
+
+      <!-- 右边正文内容 -->
       <div id="section">
-        <section id="ditu">
-          <h2>地图</h2>
-          <a href="https://map.baidu.com/">百度地图</a>
-          <a href="https://www.amap.com/">高德地图</a>
-          <a href="http://map.sogou.com/">搜狗地图</a>
-          <a href="https://map.qq.com/">腾讯地图</a>
+        <!-- 正文里面 -->
+        <section id="search1">
+          <h2>搜索一下</h2>
+          <input type="text" id="ipt1" placeholder="点击搜索" />
+          <button id="btn1">搜狗搜索</button>
+          <ul>
+            <li>
+              <a href="javascript:;" id="sougou">
+                <img src="https://www.sogou.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" id="baidu">
+                <img src="https://www.baidu.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" id="biying">
+                <img src="https://cn.bing.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" id="s360">
+                <img src="https://www.so.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" id="google">
+                <img src="https://www.google.cn/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" id="blbl">
+                <img src="https://search.bilibili.com/favicon.ico" alt="" />
+              </a>
+            </li>
+          </ul>
         </section>
 
-        <section id="youxiang">
-          <h2>邮箱</h2>
-          <a href="https://mail.qq.com/">QQ邮箱</a>
-          <a href="https://mail.163.com/">网易163邮箱</a>
+        <!--
+        <section id="search2">
+          <h2>暂无</h2>
+          <input type="text" id="ipt2" />
+          <button id="btn2">搜索</button>
+          <ul>
+            <li id="sougou">
+              <a href="javascript:;">
+                <img src="https://www.sogou.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="baidu">
+              <a href="javascript:;">
+                <img src="https://www.baidu.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="biying">
+              <a href="javascript:;">
+                <img src="https://cn.bing.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="s360">
+              <a href="javascript:;">
+                <img src="https://www.so.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="google">
+              <a href="javascript:;">
+                <img src="https://www.google.cn/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="blbl">
+              <a href="javascript:;">
+                <img src="https://search.bilibili.com/favicon.ico" alt="" />
+              </a>
+            </li>
+          </ul>
         </section>
 
-        <section id="fanyi">
-          <h2>翻译</h2>
-          <a href="https://fanyi.baidu.com/">百度翻译</a>
-          <a href="https://fanyi.sogou.com/">搜狗翻译</a>
-          <a href="https://fanyi.youdao.com/">有道翻译</a>
-          <a href="https://translate.google.cn/">Google翻译</a>
+        <section id="search3">
+          <h2>暂无</h2>
+          <input type="text" id="ipt3" />
+          <button id="btn3">搜索</button>
+          <ul>
+            <li id="sougou">
+              <a href="javascript:;">
+                <img src="https://www.sogou.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="baidu">
+              <a href="javascript:;">
+                <img src="https://www.baidu.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="biying">
+              <a href="javascript:;">
+                <img src="https://cn.bing.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="s360">
+              <a href="javascript:;">
+                <img src="https://www.so.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="google">
+              <a href="javascript:;">
+                <img src="https://www.google.cn/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="blbl">
+              <a href="javascript:;">
+                <img src="https://search.bilibili.com/favicon.ico" alt="" />
+              </a>
+            </li>
+          </ul>
         </section>
 
-        <section id="youxi">
-          <h2>游戏</h2>
-          <a href="https://lol.qq.com/">英雄联盟</a>
-          <a href="https://pvp.qq.com/">王者荣耀</a>
-          <a href="https://hs.blizzard.cn/">炉石传说</a>
+        <section id="search4">
+          <h2>暂无</h2>
+          <input type="text" id="ipt4" />
+          <button id="btn4">搜索</button>
+          <ul>
+            <li id="sougou">
+              <a href="javascript:;">
+                <img src="https://www.sogou.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="baidu">
+              <a href="javascript:;">
+                <img src="https://www.baidu.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="biying">
+              <a href="javascript:;">
+                <img src="https://cn.bing.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="s360">
+              <a href="javascript:;">
+                <img src="https://www.so.com/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="google">
+              <a href="javascript:;">
+                <img src="https://www.google.cn/favicon.ico" alt="" />
+              </a>
+            </li>
+            <li id="blbl">
+              <a href="javascript:;">
+                <img src="https://search.bilibili.com/favicon.ico" alt="" />
+              </a>
+            </li>
+          </ul>
         </section>
+        -->
 
-        <section id="xinwen">
-          <h2>新闻</h2>
-          <a href="http://www.people.com.cn/">人民网</a>
-          <a href="http://www.xinhuanet.com/">新华网</a>
-          <a href="http://www.china.com.cn/">中国网</a>
-          <a href="http://cn.chinadaily.com.cn/">中国日报网</a>
-          <a href="http://www.cnr.cn/">央广网</a>
-          <a href="https://www.cctv.com/">央视网</a>
-          <a href="http://www.chinanews.com/">中国新闻网</a>
-        </section>
-
-        <section id="sousuo">
-          <h2>搜索</h2>
-          <a href="https://www.baidu.com/">百度搜索</a>
-          <a href="https://www.sogou.com/">搜狗搜索</a>
-          <a href="https://cn.bing.com/">必应搜索</a>
-          <a href="https://www.so.com/">360搜索</a>
-          <a href="https://www.google.com/">Google搜索</a>
-        </section>
-
-        <section id="wangzhi">
-          <h2>网址</h2>
-          <a href="https://hao.360.com/">360导航</a>
-          <a href="https://www.2345.com/">2345网址导航</a>
-          <a href="https://hao.qq.com/">QQ导航</a>
-          <a href="https://123.sogou.com/">搜狗网址导航</a>
-        </section>
-
-        <section id="dianshang">
-          <h2>电商</h2>
-          <a href="https://www.taobao.com/">淘宝</a>
-          <a href="https://www.jd.com/">京东</a>
-          <a href="https://www.pinduoduo.com/">拼多多</a>
-          <a href="https://www.tmall.com/">天猫</a>
-          <a href="https://www.suning.com/">苏宁易购</a>
-          <a href="http://www.dangdang.com/">当当网</a>
-          <a href="https://www.amazon.cn/">亚马逊</a>
-        </section>
-
-        <section id="zhibo">
-          <h2>直播</h2>
-          <a href="https://live.bilibili.com/">bilibili直播</a>
-          <a href="https://www.huya.com/">虎牙直播</a>
-          <a href="https://www.douyu.com/">斗鱼直播</a>
-          <a href="https://www.yy.com/">YY直播</a>
-        </section>
-
-        <section id="shipin">
-          <h2>视频</h2>
-          <a href="https://www.bilibili.com/">哔哩哔哩</a>
-          <a href="https://www.iqiyi.com/">爱奇艺</a>
-          <a href="https://www.youku.com/">优酷</a>
-          <a href="https://v.qq.com/">腾讯视频</a>
-          <a href="https://tv.sohu.com/">搜狐视频</a>
-          <a href="https://www.le.com/">乐视视频</a>
-          <a href="https://www.douyin.com/">抖音</a>
-          <a href="http://www.yyets.com/">人人影视</a>
-          <a href="https://tool.yijingying.com/video/">***视频解析***</a>
-          <a href="https://www.yijingying.com/video">***视频解析新网站***</a>
-          <a href="https://mixkit.co/">mixkit</a>
-          <a href="https://www.xinpianchang.com/">新片场</a>
-          <a href="https://www.videezy.com/">videezy</a>
-          <a href="https://www.yugaopian.cn/">预告片世界</a>
-          <a href="https://gaoqing.fm/">高清电影</a>
-          <a href="http://www.yinfans.me/">音范丝</a>
-        </section>
-
-        <section id="yinyue">
-          <h2>音乐</h2>
-          <a href="https://music.163.com/">网易云音乐</a>
-          <a href="https://y.qq.com/">QQ音乐</a>
-          <a href="http://www.kugou.com/">酷狗音乐</a>
-          <a href="http://www.kuwo.cn/">酷我音乐</a>
-          <a href="https://music.migu.cn/">咪咕音乐</a>
-          <a href="http://tool.liumingye.cn/music/?page=searchPage"
-            >MyFreeMP3</a
-          >
-        </section>
-
-        <section id="changyong">
-          <h2>常用</h2>
-          <a href="https://www.bilibili.com/"
-            >哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a
-          >
-          <a href="https://www.huya.com/11352915">主播辣眼睛直播-虎牙直播</a>
-          <a href="http://LM.0123love.top"
-            >爱电影分享(检查之后用手机端刷新打开)</a
-          >
-          <a href="https://www.op.gg/">op.gg</a>
-          <a href="https://www.speedtest.cn/">测速网</a>
-          <a href="http://melogin.cn/">家用路由器设置MW313R</a>
-          <a href="https://pan.baidu.com/">百度网盘</a>
-          <a href="http://zykj888.ys168.com/">pandownload-30</a>
-          <a href="https://mk666.cc/index.php"
-            >免费轰炸机/免费手机轰炸|免费短信轰炸|免费电话轰炸|免费号码轰炸</a
-          >
-          <a href="http://www.zimuku.la/">字幕库</a>
-          <a href="http://www.hebqx.com/sfz/rizhao/"
-            >日照身份证号大全-日照身份证开头-日照市身份证号码-身份证查询</a
-          >
-          <a href="https://liferestart.syaro.io/view/">人生重开模拟器</a>
-          <a href="index2.html">网页2</a>
-        </section>
-
-        <section id="daohang">
-          <h2>导航</h2>
-          <a href="https://imyshare.com/"
-            >精品网站导航- iMyShare(神秘的热心网友)</a
-          >
-          <a href="https://www.24kdh.com/">24k导航</a>
-          <a href="https://daohang.youyisi8.com/">有意思导航</a>
-          <a href="https://hao.wmzhe.cn/">完美导航</a>
-          <a href="https://pxz520.cn/">贫小子</a>
-          <a href="https://www.bookmarkearth.com/"
-            >首页-书签地球-中国首家浏览器书签共享平台</a
-          >
-          <a href="https://dalao.ru/">大佬点入 | 不死鸟官网发布页</a>
-        </section>
-
-        <section id="sheji">
-          <h2>设计</h2>
-
-          <h3>设计--灵感</h3>
-          <a href="https://huaban.com/">花瓣网</a>
-          <a href="https://www.zcool.com.cn/">站酷(ZCOOL)</a>
-          <a href="https://www.canva.cn/">Canva可画</a>
-          <a href="https://aotu.io/">Aotu.io 「凹凸实验室」</a>
-          <a href="http://www.51yuansu.com/">觅元素</a>
-          <a href="http://www.58pic.com/">千图网</a>
-          <a href="https://588ku.com/">千库网</a>
-          <a href="https://699pic.com/">摄图网</a>
-          <a href="https://ibaotu.com/">包图网</a>
-          <a href="http://soso.nipic.com/">昵图网</a>
-          <a href="http://www.ooopic.com/">我图网</a>
-          <a href="http://www.tuyiyi.com/">图翼翼-大部分需要付费</a>
-          <a href="https://ycg.qq.com/">腾讯原创馆</a>
-          <a href="https://www.dc10000.com">素材国度</a>
-          <a href="https://www.behance.net/">Behance</a>
-          <a href="https://dribbble.com/">dribbble</a>
-          <a href="https://www.gtn9.com/">古田路9号</a>
-          <a href="https://www.uisdc.com/">优设网</a>
-          <a href="https://www.iguoguo.net/">爱果果</a>
-          <a href="http://www.68design.net/">68design</a>
-          <a href="http://reeoo.com/">ree0g设计灵感</a>
-          <a href="http://www.thefwa.com/">国外设计灵感网较慢</a>
-          <a href="http://ww.uishe.cn/">UI社</a>
-          <a href="http://collectui.com/">Scollestuh</a>
-
-          <h3>设计--导航</h3>
-          <a href="https://www.zhihu.com/question/20369808"
-            >优秀的设计网站-知乎</a
-          >
-          <a href="https://www.meiye.art/">美叶网</a>
-          <a href="http://www.uicool123.com/webnav">UI酷设计--设计导航</a>
-          <a href="http://hao.shejidaren.com/"
-            >设计导航-精选最好的设计网站大全</a
-          >
-          <a href="https://www.seeseed.com/">Seeseed-无穷尽设计可能</a>
-          <a href="http://so.uigreat.com/">Ul设计师导航网-优阁</a>
-          <a href="https://hao.uisdc.com/">优设导航-学设计从这里开始!</a>
-          <a href="http://16map.com/">设计导航-一流设计导航网站大全</a>
-          <a href="http://www.chuangzaoshi.com/">创造狮导航</a>
-          <a href="http://www.hippter.com/">HiPPTer</a>
-          <a href="http://www.uxmap.cn/">设计导航-好设计从这里开始|Uxmap</a>
-          <a href="http://www.qijishow.com/">奇迹秀</a>
-          <a href="http://www.qijishow.com/down/index.html">奇迹工具箱</a>
-          <a href="http://90sheji.com/">90设计</a>
-          <a href="https://idesign.qq.com/">腾讯设计导航</a>
-          <a href="http://ww.niudana.com/">牛大拿设计导航</a>
-          <a href="http://www.ad110.com/">Ad110</a>
-          <a href="http://91sotu.com/">搜图导航</a>
-          <a href="https://www.ubuuk.com/">优波设计</a>
-
-          <h3>设计--素材</h3>
-          <a href="http://www.hoslin.cn/">红森林-(HOSLIN.CN)</a>
-          <a href="http://www.uicool123.com/">ui酷设计</a>
-          <a href="https://sc.chinaz.com/">站长素材</a>
-          <a href="https://bitu360.com/">笔图网</a>
-          <a href="https://www.redocn.com/">红动中国</a>
-          <a href="https://www.zhisheji.com/">致设计</a>
-          <a href="http://www.hamaziyuan.com/">蛤蟆资源</a>
-          <a href="http://www.3h3.com/k/LightroomPresetsDownload/"
-            >Lightroom预设下载</a
-          >
-          <a href="https://brushes8.com/">ps笔刷吧</a>
-          <a href="https://abduzeedo.com/">Abduzeed8</a>
-          <a href="https://scene360.com/">Scene360</a>
-          <a href="https://psdrepo.com/">FREE PSD</a>
-          <a href="http://woofeng.cn/">黄蜂</a>
-
-          <h3>设计--素材免费</h3>
-          <a href="http://pngimg.com/">PNG images | 100 000+ Free PNG images</a>
-          <a href="https://unsplash.com/"
-            >Beautiful Free lmages & Pictures | Unsplash</a
-          >
-          <a href="https://pngss.com/">PNG搜索网</a>
-          <a href="https://www.visualhunt.com">商业个人都可用</a>
-          <a href="https://www.pexels.com">支持下载的图片都可自由使用</a>
-          <a href="https://www.foodiesfeed.com">美食素材网站</a>
-          <a href="https://www.pixabay.com/zh/">免费正版高清素材库</a>
-          <a href="https://www.ssyer.com/home">沙沙野(无版权图片)</a>
-          <a href="https://7mx.com/">7MX</a>
-          <a href="http://www.quanjing.com/">全景图</a>
-          <a href="http://www.Lanrentuku.com/vector/">懒人图库</a>
-          <a href="http://arting365.com/gallery">圈片搜索设计灵感</a>
-          <a href="https://cn.freeimages.com/">免费商用圈片质量不高</a>
-          <a href="http://streetwill.co/">图片素材</a>
-          <a href="https://www.duitang.com/">堆糖</a>
-          <a href="https://tinypng.com/">图片压缩tinypng</a>
-          <a href="https://lanhuapp.com/">蓝湖切图标注等</a>
-          <a href="https://unblast.com">免费设计素材网</a>
-          <a href="https://www.stickpng.com">免扣png素材网</a>
-          <a
-            href="https://icons8.com/animated-iconshttps://icons8.com/animated-icons"
-            >免费可商用动效</a
-          >
-          <a href="https://www.trunklog.com/">Trunklog</a>
-          <a href="http://source.pixite.co/">Pixite</a>
-          <a href="http://cupcake.nilssonlee.se/">Cupcake</a>
-          <a href="https://picjumbo.com/">Picjumbo</a>
-          <a href="https://fancycrave.com/">Fancycrave</a>
-          <a href="https://stock.tookapic.com/photos">Tookapic</a>
-
-          <h3>设计--纹理</h3>
-          <a href="http://bg-patterns.com/">Bg-patterns背景</a>
-          <a href="http://thepatternlibrary.com/">The Pattern Library</a>
-          <a href="https://www.patterninja.com/">patterninja</a>
-          <a href="https://we.graphics/">we.graphics</a>
-
-          <h3>设计--插画</h3>
-          <a href="https://www.opendoodles.com/"
-            >Open Doodles(免费开源插画集)</a
-          >
-          <a href="https://iradesign.io/">IRA Design</a>
-          <a href="https://icons8.com/mega-creator">mega-creator</a>
-          <a href="https://mixkit.co/free-stock-art/">mixkit</a>
-          <a href="https://www.opendoodles.com/compositions">opendoodles</a>
-          <a href="https://undraw.co/illustrations">undraw</a>
-          <a href="https://www.streamlinehq.com/">streamline免费插画</a>
-          <a href="https://icons8.com/illustrations">OUCH免费矢量插画</a>
-          <a href="https://iconscout.com/free-illustrations"
-            >iconsout免费可商用图标、插画、3D模型、图标动效</a
-          >
-          <a href="http://www.humaaans.com">免费可商用插画素材</a>
-          <a href="https://gallery.manypixels.co/">免费可商用插画素材</a>
-          <a href="https://isoflat.com/isobuild/">在线制作2.5D插画</a>
-          <a href="https://generator.opendoodles.com/">免费可商用涂鸦插画</a>
-          <a href="https://delesign.com/free-designs/graphics/"
-            >免费可商用双色插画</a
-          >
-          <a href="https://pan.baidu.com/s/14Zky5en8Kz3unkiLi08DUg"
-            >百度网盘插画打包1(提取码:r2bt)</a
-          >
-          <a href="https://pan.baidu.com/s/1DPrWb7kIPBU-q7rWOsuzPQ"
-            >百度网盘插画打包2(提取码:4s5u)</a
-          >
-
-          <h3>设计--配色</h3>
-          <a href="https://coolors.co/">散热器</a>
-          <a href="https://coolors.co/461220-8c2f39-b23a48-fcb9b2-fed0bb"
-            >散热器1</a
-          >
-          <a href="https://colorhunt.co/">色彩搜寻</a>
-          <a href="http://colorhunt.co/popular">色彩搜寻-最受欢迎的调色板</a>
-          <a href="https://uigradients.com/">色彩渐变</a>
-          <a href="http://zhongguose.com/">中国色配色</a>
-          <a href="https://colors.ichuantong.cn/">中国传统颜色手册</a>
-          <a href="https://flatuicolors.com/">平面UI颜色</a>
-          <a href="http://colorme.io/">ColorMe</a>
-          <a href="http://khroma.co/">khroma</a>
-          <a href="http://www.colordrop.io/">ColorDrop</a>
-          <a href="https://color.adobe.com">色轮、调色盘产生器</a>
-          <a href="https://www.materialpalette.com/"
-            >选择2种颜色，自动生成扁平化配色界面(主色辅色强调色)</a
-          >
-          <a href="https://webgradients.com/">渐变色配色</a>
-          <a href="https://shapefactory.co"
-            >配色、图片颜色修改、配色提取、logo生成</a
-          >
-          <a href="http://colorsupplyyy.com/app/"
-            >基于色彩原理的扁平插画快速配色</a
-          >
-          <a href="https://www.sessions.edu/color-caLculator/"
-            >基于色彩原理的配色</a
-          >
-          <a href="http://colorsafe.co/">设定背景色，自动匹配前景文字色</a>
-          <a href="https://www.happyhues.co/">随机产生色卡(会告诉你怎么用)</a>
-          <a href="http://colormind.io/">随机产生色卡</a>
-          <a href="https://colorsinspo.com">色卡</a>
-          <a href="http://khroma.co/">选50种你喜欢的颜色自动为你生成色卡</a>
-          <a href="http://www.palettable.io/">根据喜好生成色卡</a>
-          <a href="https://randomally.com/">快速提供前背景色配色灵感</a>
-          <a href="https://www.threebu.it/randommaterial-paLette/"
-            >快速提供前背景色配色灵感</a
-          >
-          <a href="http://www.vanschneider.com/colors/"
-            >快速提供前背景色配色灵感</a
-          >
-          <a href="http://www.colorhexa.com/f84604"
-            >选择一个颜色，分析，匹配色彩方案(色盲模拟)</a
-          >
-          <a href="http://www.colorlisa.com/">知名画家名作颜色提取</a>
-          <a href="http://www.colourco.de/"
-            >点击左侧色彩关系标签，拖动鼠标调整自己喜欢的颜色</a
-          >
-          <a href="https://colorsupplyyy.com">color supply</a>
-          <a href="https://creativemarket.com/">creative market</a>
-          <a href="https://www.pixeden.com/">pixeden</a>
-
-          <h3>设计--字体</h3>
-          <a href="https://www.likefont.com/">识字体网</a>
-          <a href="https://www.hellofont.cn/">字由网</a>
-          <a href="https://izihun.com/">字魂网</a>
-          <a href="http://www.font168.com/">字体下载网</a>
-          <a href="https://www.17font.com/">字体视界</a>
-          <a href="http://www.aafont.com.cn/">Aa字库</a>
-          <a href="https://51ifonts.com/">Ifonts</a>
-          <a href="https://www.zijia.com.cn/"
-            >字加网-找字体来字加-专业的字体获取和字体设计交流平台</a
-          >
-          <a href="https://www.ypppt.com/ziti/">优品ppt字体下载</a>
-          <a href="https://www.maoken.com/">猫啃网</a>
-          <a href="http://www.qiuziti.com/">求字体网</a>
-          <a href="http://font.chinaz.com/">站长字体</a>
-          <a href="http://www.zitikoudai.com/">字体口袋</a>
-          <a href="http://www.diyiziti.com/">在线字体转换</a>
-          <a href="http://font.knowsky.com/">字体大宝库</a>
-          <a href="http://www.dafont.com/theme.php?cat=504&fpp=20">宇体素材</a>
-          <a href="http://www.fontshopcom/">Fontshop</a>
-          <a href="http://www.fontke.com/">Fontke</a>
-          <a href="http://www.1ikefont.com/">Likefont</a>
-
-          <h3>设计--icon</h3>
-          <a href="https://icomoon.io/">icoMoon</a>
-          <a href="https://www.iconfont.cn/">icon矢量图标库</a>
-          <a href="https://iconpark.oceanengine.com/official">IconPark</a>
-
-          <h3>设计--logo</h3>
-          <a href="https://www.logosc.cn/">logo神器</a>
-          <a href="http://www.sedashi.cn/">色大师人工智能</a>
-          <a href="http://logopond.com/">logo素材</a>
-          <a href="http://www.instantLogosearch.com/">Instantlgosearch</a>
-          <a href="http://thenounproject.com/">TheNounProject</a>
-
-          <h3>设计--样机</h3>
-          <a href="http://artboard.studio/">免费样机网站除优质标签外免费</a>
-          <a href="https://www.Ls.graphics/free-mockups">Lstore</a>
-          <a href="https://www.mockupworLd.co/">Moskup world</a>
-          <a href="https://freebiesbug.com/">Freeb1asbu9</a>+++
-          <a href="https://www.graphberry.com/">GraRhpe.ry</a>
-          <a href="https://mockup.sitapix.com/">西田图像样机</a>
-          <a href="https://www.graphicsfuel.com/category/mockup-templates/"
-            >GraphicsFuel</a
-          >
-          <a href="https://screenzy.io/">sreenzy</a>
-          <a href="http://www.uikit.me/">优间网</a>
-          <a href="https://themockup.cLub/">TheMockup.club</a>
-          <a href="https://www.dingdangsheji.com/">叮当设计</a>
-          <a href="https://www.baoxiaohe.com/">包装样机在战编辑</a>
-          <a href="https://placeit.net/">即用型模板</a>
-          <a href="https://www.yrucd.com/category/vip/mockups">设计样机</a>
-
-          <h3>设计--模板</h3>
-          <a href="https://www.zhiyusucai.com/">知鱼素材</a>
-          <a href="https://www.newcger.com/shipinsucai/">新cg儿</a>
-          <a href="http://www.lookae.com/">lookae</a>
-          <a href="https://www.vjshi.com/">vj师</a>
-          <a href="https://videocopilot.net.cn/">videocopilot</a>
-          <a href="https://www.cgown.com/">cg资源网</a>
-
-          <h3>设计--神器</h3>
-          <a href="http://matthew,wagerfield.com/flat-surfaceshader/"
-            >低多边形生成器</a
-          >
-          <a href="http://zhitu.isux.us/">压缩免费版:</a>
-          <a href="http://ppduck.com/@Dce.Quee">付费版:</a>
-          <a href="https://paveldogreat.github.10/WebGL-Fluid-Simulat1on/"
-            >流体渐变光效背景:</a
-          >
-          <a href="https://undraw.co/illustrations">免费可商用矢量插画:</a>
-          <a href="https://www.creative-tim.com/ira-design?ref=evernote.design"
-            >免费可商用渐安插画，支持ps.ai.sketch:</a
-          >
-          <a href="https://freebies.bypeople.com/">免费可商用的设计、图标:</a>
-          <a href="https://icons8.cn/ouch">免费可商用插画，矢量需付费:</a>
-          <a href="https://www.kapwing.com/484-illustrations">404页:</a>
-          <a href="https://www.drawkit.10/7ref=lapaninja">免费可商用播酉:</a>
-          <a href="https://Lukaszadam.com/illustrations"
-            >免费可商用插画，开源:</a
-          >
-          <a href="https://stubborn.fun/">免费可商用插面:</a>
-          <a href="https://fontpair.co/">一键生成西文搭配:</a>
-          <a href="https://Panzoid.com">在线片头生成:</a>
-          <a href="https://app.biteable.com">在线动画视频制作器:</a>
-          <a href="https://mikesreda.com/imagemotion/"
-            >imagemotion图像动态效果生成器:</a
-          >
-          <a href="https://codepen.io/funxer/pen/Zvjebx"
-            >混合线条生成器:Paralleldimension:</a
-          >
-          <a href="https://Vectary.com">Vectary.在线3D建模工具:</a>
-          <a href="https://codepen.10">Codepen巨量炸裂视觉生成器:</a>
-
-          <h3>亚赛</h3>
-          <a href="https://wangyasai.github.io/Play-a-ba11/">球体纹路生成器</a>
-          <a href="https://wangyasal.github.10/Perlin-Noise/">向量场迹生成器</a>
-          <a href="https://wangyasai.github.io/waveFont/">波涛汹涌的线型文字</a>
-          <a href="https://wangyasai.github.io/PerlinNoisePainter/"
-            >个大写的粒子字</a
-          >
-          <a href="https://wangyasai.github.io/NoisePainter/"
-            >向量画笔重烩器:模拟梵高油画质感</a
-          >
-          <a href="https://wangyasai.github.io/Speed-Line/">漫画速度线生成器</a>
-          <a href="https://wangyasai.github.io/Bez1er/">贝塞尔曲线生成器</a>
-          <a href="https://wangyasai.github.io/Awesome-Mosaic/"
-            >动态马赛克背景生成器</a
-          >
-          <a href="https://wangyasai.github.io/Stars-Emmision/"
-            >散射渐变光效背景:</a
-          >
-          <a href="https://wangyasai.github.io/Particles-Emission/"
-            >粒子爆炸生成器</a
-          >
-
-          <a href="https://promo.com/tools/image-resizer/?utmcontent=header"
-            >图片缩放器:</a
-          >
-          <a href="https://getavataaars.com/">卡通形象在线生成器:</a>
-          <a href="https://www.ostagram.me/queueimages/new?locaLe=cn"
-            >圈片油画风格融合网站:</a
-          >
-          <a href="https://sketchfab.com">V日维模型类网站1</a>
-          <a href="https://www.handz.design">V日维模型类网站2</a>
-          <a href="https://superscene.pro">V日维模型类网站3</a>
-          <a href="https://3ddd.casa">V日维模型类网站4</a>
-
-          <h3>设计--原型</h3>
-          <a href="http://placeit.net/">Placet</a>
-          <a href="http://www.yrucd.com/category/vip/mockups">Yrucd</a>
-          <a href="http://creativemarket.com/">Creativemarket</a>
-
-          <h3>设计--学习</h3>
-          <a href="https://www.16xx8.com/">ps教程自学网</a>
-          <a href="https://www.pszxw.net/">ps自学网</a>
-          <a href="http://www.poLuoluo.com/">破洛洛</a>
-        </section>
-
-        <section id="daima">
-          <h2>代码</h2>
-          <a href="https://github.com/">github</a>
-          <a href="https://developer.mozilla.org/zh-CN/">MDN Web Docs</a>
-          <a href="https://www.w3school.com.cn/">w3school 在线教程</a>
-          <a href="http://www.frontendjs.com/">前站导航</a>
-          <a href="https://www.mgnav.com/">马哥导航</a>
-        </section>
-
-        <section id="api">
-          <h2>API</h2>
-          <a href="https://api.btstu.cn/">搏天api-免费api接口平台</a>
-          <a href="https://api.vvhan.com/"
-            >韩小韩API接口站 - 免费API数据接口调用服务平台</a
-          >
-          <a href="https://api.xsot.cn">1</a>
-          <a href="https://api.xsot.cn">1</a>
-          <a href="https://api.vience.cn/">文曦API</a>
-          <a href="https://api.xcboke.cn/">星辰API</a>
-          <a href="http://81.70.100.130/">小宸API</a>
-          <a href="https://api.pingping6.com/">平平免费API</a>
-        </section>
-
-        <section id="ppt">
-          <h2>PPT</h2>
-          <a href="https://www.canva.cn/marketplace/templates/index.html"
-            >PPT简历手抄报名片海报模板设计素材-Canva可画</a
-          >
-          <a href="https://www.ypppt.com/">优品ppt</a>
-          <a href="http://www.hippter.com/">HiPPTer</a>
-        </section>
-
-        <section id="xiazai">
-          <h2>下载</h2>
-          <a href="http://www.pc6.com/">pc6下载站</a>
-          <a href="http://www.downxia.com/">当下软件园</a>
-          <a href="https://www.05sun.com/"
-            >零度软件园-官方软件下载-绿色软件-游戏下载-值得信赖的下载站!-零度软件园</a
-          >
-          <a href="http://www.ddooo.com/"
-            >多多软件站-提供绿色软件和热门单机游戏下载</a
-          >
-          <a href="https://www.macz.com/"
-            >Mac软件-macz软件下载-素材库-mac下载软件网站-Macz下载</a
-          >
-          <a href="https://www.05cg.com/">成功下载站</a>
-
-          <h3>软件下载(公众号)</h3>
-
-          <a href="https://mp.weixin.qq.com/s/ej42jRFO_Xml9Df-7fWCCA"
-            >软件安装管家软件目录（3月更新）</a
-          >
-          <a href="https://mp.weixin.qq.com/s/daiPPqpuFGe8iJOA0sh8Gg"
-            >神器资源目录---神器365</a
-          >
-        </section>
-
-        <section id="bizhi">
-          <h2>壁纸</h2>
-          <a href="https://anime-pictures.net/?lang=zh_CN">动漫图片和壁纸</a>
-          <a href="https://wallhaven.cc/">Wallhaven</a>
-          <a href="https://wall.alphacoders.com/">WALLPAPER ABYSS</a>
-          <a href="https://bz.zzzmh.cn/">极简壁纸</a>
-          <a href="https://wallroom.io/">Wallroom</a>
-          <a href="http://www.netbian.com/">彼岸壁纸</a>
-        </section>
-
-        <section id="yinpin">
-          <h2>音频</h2>
-          <a href="http://sc.chinaz.com/">站长素材</a>
-          <a href="http://www.aigei.com/">爱给网</a>
-          <a href="https://www.91flac.com/">91flac</a>
-          <a href="http://www.voicer.com/">Voicer</a>
-        </section>
-
-        <section id="keji">
-          <h2>科技</h2>
-          <a href="https://www.zol.com.cn/">中关村在线</a>
-          <a href="https://www.autohome.com.cn/rizhao/">汽车之家</a>
-        </section>
-
-        <section id="xuexi">
-          <h2>学习</h2>
-          <a href="http://www.iciba.com/">金山词霸</a>
-          <a href="https://www.gushiwen.cn/">古诗文网</a>
-          <a href="https://code-learning-gamma.vercel.app/#/">Document-鱼皮</a>
-          <a href="https://weread.qq.com/">微信读书</a>
-        </section>
-
-        <section id="gongju">
-          <h2>工具</h2>
-          <a href="https://tool.yijingying.com/">Healer的工具箱</a>
-          <a href="https://tool.liumingye.cn/">刘明野的工具箱</a>
-          <a href="http://www.qijishow.com/">奇迹秀</a>
-          <a href="https://music.hwkxk.cn/">音乐助手</a>
-          <a href="https://ru.similarsites.com/">similarsites</a>
-          <a href="https://xiezuocat.com/">秘塔写作猫</a>
-          <a href="https://jianwai.youdao.com/">网易见外工作台</a>
-          <a href="https://www.polebrief.com/">极简简历</a>
-          <a href="https://baimiao.uzero.cn/">白描</a>
-          <a href="https://photokit.com/?lang=zh">PhotoKit图片编辑器</a>
-          <a href="https://space.bilibili.com/586883695">次元宝箱(B站号)</a>
-          <a href="https://xbeibeix.com/api/bilibili/"
-            >贝贝BiliBIli - B站视频下载</a
-          >
-          <a href="https://convertio.co/zh/download/">转换文件-Convertio</a>
-          <a href="https://developer.baidu.com/vcast"
-            >百度开发者中心--文字转语音</a
-          >
-          <a href="https://www.iflyrec.com/">讯飞听见--语音转文字</a>
-        </section>
-
-        <section id="huiyuan">
-          <h2>会员</h2>
-          <a href="http://www.4wu2.com/?cid=0&tid=1050"
-            >(失效)影视会员批发网-影视会员发卡网-爱奇艺-芒果会员-批发号影视会员代理,影视共享号-影视会员云商城</a
-          >
-          <a href="http://vip.aicdk.cn/"
-            >影视会员批发,招代理,低价vip,账号出租,激活码cdk拿货-会员批发网-480会员网</a
-          >
-        </section>
-
-        <section id="qita">
-          <h2>其他</h2>
-          <a href="https://k.33k.la/click.html?sid=529982">点击进入精彩内容</a>
-          <a href="https://www.dapengjiaoyu.cn/">大鹏教育官网</a>
-          <a href="https://m.dapengjiaoyu.com/">大鹏教育m站(移动端)</a>
-          <a href="http://xjwgl.sdjzu.edu.cn/">山建教务系统</a>
-        </section>
-
-        <section id="fanqiang">
-          <h2>翻墙</h2>
-          <a href="https://www.google.com/">谷歌</a>
-          <a href="https://play.google.com/store?hl=en">谷歌商店</a>
-          <a href="https://accounts.google.com/b/0/AddMailService">Gmail</a>
-          <a href="https://youtube.com/">YouTube</a>
-          <a href="https://www.instagram.com/">lnstagram</a>
-          <a href="https://twitter.com/home">Twitter</a>
-          <a href="https://www.twitch.tv/">Twitch</a>
-          <a href="https://maps.google.com/">地图</a>
-          <a href="https://news.google.com/">资讯</a>
-          <a href="https://greasyfork.org/zh-CN">Greasy Fork</a>
-          <a href="https://sleazyfork.org/zh-CN">sleazy Fork</a>
-          <a href="https://ss.laihuluwa.com/aff/U7YK">蚂蚁官网</a>
-        </section>
-
-        <section id="else">
-          <h2>else</h2>
-          <a href="https://ac-illust.com/tw/">下载免费插画-wai</a>
-          <a href="https://www.maliquankai.com">码力全开(开发)</a>
-          <a href="https://tuomodesign.store/">tuomodesign样机模板网站</a>
-          <a href="https://tw.m.aixdzs.com/">爱下电子书</a>
-          <a href="https://www.kanman.com/">看漫画</a>
-          <a href="https://www.bangongziyuan.com/">办公资源网</a>
-          <a href="http://www.kengso.com/">坑搜网</a>
-          <a href="http://www.languang.co/">蓝光网</a>
-        </section>
-
-        https://www.behance.net https://dribbble.com https://abduzeedo.com/
-        https://thefwa.com https://www.awwwards.com https://www.artstation.com
-        https://beta.thedieline.com https://www.designspiration.net
-        https://www.booooooom.com http://www.trendlist.org https://ello.co
-        http://huabanpro.com https://www.pinterest.com https://www.zcool.com.cn
-        https://www.gtn9.com https://scene360.com https://bestwebsite.gallery
-        http://365awesomedesigners.com https://theinspirationgrid.com
-        https://www.thisiscolossal.com http://www.voicer.me https://www.topys.cn
-        https://hypebeast.cn https://www.wallpaper.com http://www.vice.cn
-        https://www.japandesign.ne.jp
-        https://www.designmattersmedia.com/designmatters
-        http://www.simple-style.com https://theultralinx.com
-        https://mymodernmet.com https://weandthecolor.com
-        https://www.creativereview.co.uk http://www.designfacts.org
-        https://www.artupon.com https://99u.adobe.com https://design-milk.com
-        http://www.instantlogosearch.com https://thenounproject.com
-        http://www.logobook.com https://www.iconfinder.com
-        https://alpha.wallhaven.cc http://www.polayoutu.com/collections
-        https://mywed.com https://21wallpaper.design https://butdoesitfloat.com
+        <!-- 最下面的备注 -->
+        <div id="zhu">
+          <p>
+            该网站仅供个人测试使用，如有疑问请
+            <a href="tel:13256061539">电话</a> /
+            <a href="tencent://message/?Site=baidu.com&uin=1196601738&Menu=yes"
+              >QQ</a
+            >
+            与本人联系。
+          </p>
+        </div>
       </div>
     </div>
     <script src="./js/index.js"></script>
